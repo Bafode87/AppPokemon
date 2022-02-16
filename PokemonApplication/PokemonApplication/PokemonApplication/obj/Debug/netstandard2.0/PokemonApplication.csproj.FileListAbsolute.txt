@@ -6,6 +6,10 @@ C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\o
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\PokemonApplication.GeneratedMSBuildEditorConfig.editorconfig
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page1.xaml.g.cs
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page2.xaml.g.cs
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page3.xaml.g.cs
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page4.xaml.g.cs
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\PokemonApplication.AssemblyInfoInputs.cache
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\PokemonApplication.AssemblyInfo.cs
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\PokemonApplication.csproj.CoreCompileInputs.cache
@@ -13,7 +17,3 @@ C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\o
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\PokemonApplication.dll
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\ref\PokemonApplication.dll
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\PokemonApplication.pdb
-C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page1.xaml.g.cs
-C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page2.xaml.g.cs
-C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page3.xaml.g.cs
-C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page4.xaml.g.cs

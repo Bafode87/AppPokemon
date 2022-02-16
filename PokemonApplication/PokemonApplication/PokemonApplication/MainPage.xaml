@@ -2,21 +2,21 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:pages="clr-namespace:PokemonApplication.Pages"
        x:Class="PokemonApplication.MainPage"
-       BackgroundColor="Red"
+       BackgroundColor="#F0737A"
        TitleColor="White"
        UnselectedColor="Black"
        Shell.NavBarIsVisible="False">
     <TabBar Title="Poke">
-        <ShellContent  Title="First page" Icon="accueil.png">
+        <ShellContent  Title="Accueil" Icon="accueil.png">
             <pages:Page1/>
         </ShellContent>
-        <ShellContent  Title="Second page" Icon="pokedex.png">
+        <ShellContent  Title="Pokedex" Icon="pokedex.png">
             <pages:Page2/>
         </ShellContent>
-        <ShellContent  Title="Third page" Icon="ajout.png">
+        <ShellContent  Title="Ajout" Icon="ajout.png">
             <pages:Page3/>
         </ShellContent>
-        <ShellContent  Title="Fourth page" Icon="equipe.png">
+        <ShellContent  Title="Equipes" Icon="equipe.png">
             <pages:Page4/>
         </ShellContent>
     </TabBar>

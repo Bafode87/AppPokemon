@@ -5,15 +5,15 @@
     <ContentPage.Content>
         <FlexLayout>
             <StackLayout Padding="15">
-                <Frame CornerRadius="10" BackgroundColor="Red">
-                    <Label Text="POKEAPPLI" FontSize="Title" HorizontalTextAlignment="Center" TextColor="WHITE"/>
+                <Frame CornerRadius="10" BorderColor="Black" BackgroundColor="#F0737A">
+                    <Image Source="PokeAppli.png"/>
                 </Frame>
                 <Frame>
-                    <Image Source="https://cdn.pixabay.com/photo/2016/07/13/08/31/pokemon-1513925_960_720.jpg" />
+                    <Image Source="https://cdn.pixabay.com/photo/2016/07/13/08/31/pokemon-1513925_960_720.jpg" WidthRequest="300" />
                 </Frame>
                 
                     <Label Text="Bienvenue dans l'univers incroyable des pokémons !" FontFamily="Lobster-Regular" FontSize="Header" HorizontalTextAlignment="Center"/>
-                <Label Text="Complètes le pokedex, crée ton équipe et deviens le meilleur " FontFamily="Lobster-Regular" HorizontalTextAlignment="Center"/>
+                
 
                 <FlexLayout>
                     <Frame>

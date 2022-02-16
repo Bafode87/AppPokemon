@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Eph/X2N6DRykYs0x8nD8meKI9wyor1Jx20/5WOrgpTpWw43dzyRnlBs6IgHSFTs69nKaxK9xy/8zFnSYjfXlJg==",
+  "dgSpecHash": "SCTNXTlcShb3KubRI9WqStVXqDQMcgp5k4f3z1F0gWL31ttfPlzj3eGfbhd4BuMSo8PnWmcKVNTrTgWhu5P1sg==",
   "success": true,
   "projectFilePath": "C:\\PokeApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,11 @@
     "C:\\Users\\bafod\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\pokeapinet\\3.0.3\\pokeapinet.3.0.3.nupkg.sha512",
+    "C:\\Users\\bafod\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\bafod\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\bafod\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\bafod\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\bafod\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
@@ -22,7 +27,7 @@
     "C:\\Users\\bafod\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.0\\system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
-    "C:\\Users\\bafod\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\bafod\\.nuget\\packages\\xamarin.essentials\\1.7.1\\xamarin.essentials.1.7.1.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\xamarin.forms\\5.0.0.2337\\xamarin.forms.5.0.0.2337.nupkg.sha512"
   ],
   "logs": []

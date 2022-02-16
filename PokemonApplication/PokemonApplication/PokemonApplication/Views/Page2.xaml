@@ -3,32 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PokemonApplication.Pages.Page2">
     <ContentPage.Content>
-        <StackLayout>
-            <ListView x:Name="ListPokemons">
+        <StackLayout  Padding="15">
+            <Frame CornerRadius="10" BorderColor="Black"   BackgroundColor="#F0737A">
+                <Label HorizontalTextAlignment="Center" Text="POKEDEX" FontSize="Title" FontAttributes="Bold"/>
+            </Frame>
+         
+            <ListView x:Name="ListPokemons"    
+                      HasUnevenRows="True"
+                      SeparatorColor="Blue"
+                      SeparatorVisibility="None"
+                     >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
-                               
-                                <Grid.ColumnDefinitions>
-                                 
-                                    <ColumnDefinition  Width="100"/>
-                                    <ColumnDefinition  Width="100"/>
-                                    <ColumnDefinition  Width="100"/>
-                                    <ColumnDefinition  Width="100"/>
-                                   
-      
-                                </Grid.ColumnDefinitions>
-                                
-                                <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding ImageSource}"/>
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}"/>
-                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding Level}"/>
-                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding Type}"/>
-                                
+                            <Grid Padding="10">
+                                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="#F0737A">
+                                    <StackLayout Orientation="Horizontal" >
+                                        <Frame CornerRadius="100">
+                                            <Image Source="{Binding UrlImg}" WidthRequest="100" HeightRequest="100"></Image>
+                                        </Frame>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label VerticalOptions="Center" Text="{Binding Name, StringFormat='Nom : {0:F0}'}" FontSize="Large" FontAttributes="Bold" FontFamily="Lobster" ></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
+               
             </ListView>
         </StackLayout>
     </ContentPage.Content>
