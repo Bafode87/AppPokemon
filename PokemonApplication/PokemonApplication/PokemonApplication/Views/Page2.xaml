@@ -7,31 +7,33 @@
             <Frame CornerRadius="10" BorderColor="Black"   BackgroundColor="#F0737A">
                 <Label HorizontalTextAlignment="Center" Text="POKEDEX" FontSize="Title" FontAttributes="Bold"/>
             </Frame>
-         
-            <ListView x:Name="ListPokemons"    
+
+            <ListView ItemsSource="{Binding MyList}"    
                       HasUnevenRows="True"
                       SeparatorColor="Blue"
                       SeparatorVisibility="None"
+                      ItemTapped="OnItemSelected"
                      >
+
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Grid Padding="10">
                                 <Frame CornerRadius="10" HasShadow="True" BackgroundColor="#F0737A">
                                     <StackLayout Orientation="Horizontal" >
-                                        <Frame CornerRadius="100">
-                                            <Image Source="{Binding UrlImg}" WidthRequest="100" HeightRequest="100"></Image>
+                                        <Frame CornerRadius="100" >
+                                            <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100"></Image>
                                         </Frame>
-                                        <StackLayout VerticalOptions="Center">
-                                            <Label VerticalOptions="Center" Text="{Binding Name, StringFormat='Nom : {0:F0}'}" FontSize="Large" FontAttributes="Bold" FontFamily="Lobster" ></Label>
-                                        </StackLayout>
+                                        <Frame VerticalOptions="CenterAndExpand"  BackgroundColor="#F0737A">
+                                            <Label TextColor="White" VerticalOptions="Center" Text="{Binding Name}" FontSize="Large" FontAttributes="Bold" FontFamily="Lobster"  TextTransform="Uppercase" ></Label>
+                                        </Frame>
                                     </StackLayout>
                                 </Frame>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-               
+
             </ListView>
         </StackLayout>
     </ContentPage.Content>
