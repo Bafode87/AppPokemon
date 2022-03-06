@@ -3,30 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PokemonApplication.Pages.Page2">
     <ContentPage.Content>
-        <StackLayout  Padding="15">
-            <Frame CornerRadius="10" BorderColor="Black"   BackgroundColor="#F0737A">
-                <Label HorizontalTextAlignment="Center" Text="POKEDEX" FontSize="Title" FontAttributes="Bold"/>
-            </Frame>
+        <StackLayout  Padding="15" BackgroundColor="LightBlue">
+            <Image Source="pokeAppli.png" WidthRequest="200" />
 
             <ListView ItemsSource="{Binding MyList}"    
                       HasUnevenRows="True"
-                      SeparatorColor="Blue"
                       SeparatorVisibility="None"
                       ItemTapped="OnItemSelected"
+                      
+                       
+                      
                      >
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10">
-                                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="#F0737A">
-                                    <StackLayout Orientation="Horizontal" >
-                                        <Frame CornerRadius="100" >
+                            <Grid Padding="10" BackgroundColor="LightBlue">
+                                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="{Binding Couleur}">
+                                    <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="CenterAndExpand" >
+                                        <Frame CornerRadius="100" BorderColor="Black"   >
                                             <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100"></Image>
                                         </Frame>
-                                        <Frame VerticalOptions="CenterAndExpand"  BackgroundColor="#F0737A">
-                                            <Label TextColor="White" VerticalOptions="Center" Text="{Binding Name}" FontSize="Large" FontAttributes="Bold" FontFamily="Lobster"  TextTransform="Uppercase" ></Label>
+                                        <Frame VerticalOptions="CenterAndExpand"   CornerRadius="15" WidthRequest="150" BackgroundColor="White" BorderColor="Black">
+                                            <StackLayout>
+                                            <Label VerticalOptions="Center" Text="{Binding Name}"  FontAttributes="Bold" FontFamily="Lobster"  TextTransform="Uppercase" ></Label>
+                                                <FlexLayout>
+                                                <Image Source="pokeball.png" WidthRequest="20" HeightRequest="20"></Image>
+                                                    <Label Text="{Binding Id, StringFormat='N.{0:F0}'}"/>
+                                                </FlexLayout>
+                                            </StackLayout>
                                         </Frame>
+                                        
+                                        
                                     </StackLayout>
                                 </Frame>
                             </Grid>

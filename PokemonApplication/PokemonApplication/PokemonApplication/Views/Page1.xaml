@@ -1,26 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PokemonApplication.Pages.Page1">
+<ContentPage
+    x:Class="PokemonApplication.Pages.Page1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <FlexLayout>
+        <FlexLayout BackgroundColor="LightBlue">
             <ScrollView>
-                <StackLayout Padding="15">
-                    <Frame CornerRadius="10" BorderColor="Black" BackgroundColor="#F0737A">
-                        <Image Source="PokeAppli.png"/>
-                    </Frame>
-                    <Frame>
-                        <Image Source="https://cdn.pixabay.com/photo/2016/07/13/08/31/pokemon-1513925_960_720.jpg" WidthRequest="300" />
-                    </Frame>
-                    <Label Text="Bienvenue dans l'univers incroyable des pokémons !" FontFamily="Lobster-Regular" FontSize="Header" HorizontalTextAlignment="Center"/>
-                    <FlexLayout>
-                        <Frame>
-                            <ImageButton Source="https://assets.pokemon.com/assets/cms2/img/pokedex/full/393.png" BackgroundColor="White" />
-                        </Frame>
-                        <Frame>
-                            <Label Text="Commencer l'aventure !" FontFamily="Lobster-Regular" FontSize="Title" VerticalTextAlignment="Center"/>
-                        </Frame>
-                    </FlexLayout>
+                <StackLayout Padding="15" BackgroundColor="LightBlue" VerticalOptions="Center">
+                    
+                        
+                        <Image Source="pokeAppli.png" WidthRequest="200" />
+                   
+                    <Image
+                        Margin="15"
+                        Source="pikachu.png"
+                        WidthRequest="200" />
+
+                    
+                        <Label  Padding="15" 
+                        FontFamily="Lobster-Regular"
+                        FontSize="Header"
+                          
+                        HorizontalTextAlignment="Center"
+                        Text="Bienvenue dans l'univers incroyable des pokémons ! Notre application crée en mars 2022 comporte trois fonctionnalités. En effet, vous pouvez consulter le pokédex  et avoir la carte des 50 premiers pokémons. Vous pouvez également ajoutez des pokémons au pokédex et enfin crée une équipe de 6 pokémons ! " />
+                    
+                    <Label
+                        FontFamily="Lobster-Regular"
+                        FontSize="Title"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        Text="Commencez l'aventure !"
+                        />
+
                 </StackLayout>
             </ScrollView>
         </FlexLayout>

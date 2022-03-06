@@ -1,44 +1,131 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PokemonApplication.Views.Page2Detail">
+<ContentPage
+    x:Class="PokemonApplication.Views.Page2Detail"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout Padding="15">
+        <StackLayout Padding="15" BackgroundColor="LightBlue">
             <ScrollView>
-            <StackLayout Padding="15" BackgroundColor="#F0737A" >
-                <Frame BorderColor="Black">
-                    <Image x:Name="MonImage" HeightRequest="200" WidthRequest="300"/>
+                <Frame x:Name="MaCouleur" CornerRadius="50">
+                    <StackLayout Padding="15" x:Name ="MaCouleur1" >
+                        <Frame
+                            
+                            
+                            CornerRadius="10"
+                            BorderColor="Black">
+                            <Label
+                                
+                                x:Name="MonNom"
+                                FontAttributes="Bold"
+                                FontFamily="Lobster-Regular"
+                                FontSize="Title"
+                                HorizontalTextAlignment="Center"
+                                TextTransform="Uppercase" 
+                                TextColor="Black"/>
+                        </Frame>
+
+                        <Image
+                            x:Name="MonImage"
+                            HeightRequest="200"
+                            WidthRequest="300" />
+
+
+                        <Frame 
+                            
+                            >
+                            <Label
+                                x:Name="MonId"
+                            
+                                FontSize="Medium"
+                                HorizontalTextAlignment="Center"
+                                TextColor="Black"
+                                />
+                        </Frame>
+                        <Frame 
+                            
+                            
+                            >
+                            <Label
+                                x:Name="MaDescription"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="Center"
+                                TextColor="Black"
+                                 TextTransform="Default"/>
+                        </Frame>
+
+
+                        <Frame 
+                            
+                            
+                            >
+                            <Label
+                                x:Name="MonType"
+                               FontSize="Medium"
+                                HorizontalTextAlignment="Center"
+                                TextColor="Black"
+                                />
+                        </Frame>
+                        <Frame 
+                            
+                            
+                          >
+                            <StackLayout>
+                                <Label
+                                  FontSize="Medium"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="Black"
+                                    >
+                                    Stats
+                                </Label>
+                                <Label
+                                    x:Name="MaStat1"
+                                    FontSize="Medium"
+                                  
+                                    TextColor="Black"/>
+                                <ProgressBar
+                                    x:Name="ProgressBar1"
+                                    ProgressColor="Black"
+                                    WidthRequest="100" ScaleY="2" 
+                                     />
+                                <Label
+                                    x:Name="MaStat2"
+      
+                                    FontSize="Medium"
+                                    
+                                
+                                    TextColor="Black"/>
+
+                                <ProgressBar x:Name="ProgressBar2" ScaleY="2" ProgressColor="Black" />
+                                
+                                
+                                <Label
+                                    x:Name="MaStat3"
+                                    FontSize="Medium"
+                              
+                                    TextColor="Black"/>
+                                <ProgressBar x:Name="ProgressBar3" ProgressColor="Black" ScaleY="2" />
+                                <Label
+                                    x:Name="MaStat4"
+                                    FontSize="Medium"
+                                    TextColor="Black"/>
+                                <ProgressBar x:Name="ProgressBar4" ProgressColor="Black" ScaleY="2" />
+                                <Label 
+                                    x:Name="MaStat5"
+                                   FontSize="Medium"
+                                    TextColor="Black"/>
+                                <ProgressBar x:Name="ProgressBar5"  ProgressColor="Black" ScaleY="2"/>
+                                <Label
+                                    x:Name="MaStat6"
+                                    FontSize="Medium"
+                                    TextColor="Black"/>
+                                <ProgressBar x:Name="ProgressBar6" ProgressColor="Black" ScaleY="2"/>
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
                 </Frame>
-                <Frame BorderColor="White" CornerRadius="10" BackgroundColor="#F0737A">
-                    <Label x:Name="MonNom" FontFamily="Lobster-Regular" FontSize="Title" HorizontalTextAlignment="Center" TextColor="White" />
-                </Frame>
-                <Frame BorderColor="White" CornerRadius="10" BackgroundColor="#F0737A">
-                    <Label x:Name="MonId" FontFamily="Lobster-Regular" FontSize="Title" HorizontalTextAlignment="Center" TextColor="White" />
-                </Frame>
-
-
-                <Frame BorderColor="White" CornerRadius="10" BackgroundColor="#F0737A">
-                    <Label x:Name="MonType" FontFamily="Lobster-Regular" FontSize="Title" HorizontalTextAlignment="Center" TextColor="White"/>
-                    </Frame>
-                
-                <Label FontFamily="Lobster-Regular" FontSize="Title" HorizontalTextAlignment="Center" TextColor="White">Stats</Label>
-                <Label x:Name="MaStat1" FontSize="Large" TextTransform="Uppercase" TextColor="White"/>
-                <ProgressBar x:Name="ProgressBar1" ProgressColor="White" WidthRequest="100" />
-                <Label x:Name="MaStat2" FontSize="Large" TextTransform="Uppercase" TextColor="White"/>
-                <ProgressBar x:Name="ProgressBar2" ProgressColor="White"  />
-                <Label x:Name="MaStat3" FontSize="Large" TextTransform="Uppercase" TextColor="White"/>
-                <ProgressBar x:Name="ProgressBar3" ProgressColor="White"  />
-                <Label x:Name="MaStat4" FontSize="Large" TextTransform="Uppercase" TextColor="White"/>
-                <ProgressBar x:Name="ProgressBar4" ProgressColor="White"  />
-                <Label x:Name="MaStat5" FontSize="Large" TextTransform="Uppercase" TextColor="White"/>
-                <ProgressBar x:Name="ProgressBar5" ProgressColor="White"  />
-                <Label x:Name="MaStat6" FontSize="Large" TextTransform="Uppercase" TextColor="White"/>
-                <ProgressBar x:Name="ProgressBar6" ProgressColor="White"  />
-
-
-
-            </StackLayout>
             </ScrollView>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

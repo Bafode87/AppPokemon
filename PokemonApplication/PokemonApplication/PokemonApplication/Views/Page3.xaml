@@ -5,19 +5,7 @@
     <ContentPage.Content>
         <StackLayout Padding="15">
            
-            <Frame CornerRadius="10" BorderColor="Black" BackgroundColor="#F0737A">
-                <Label Text="AJOUTEZ UN NOUVEAU POKEMON DANS LE POKEDEX" HorizontalTextAlignment="Center" FontSize="Title" FontAttributes="Bold"/>
-            </Frame>
-
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <ImageButton Source="ajoutPhoto.png" WidthRequest="100" Grid.Column="0"/>
-                <Entry Placeholder="Entrez le nom du nouveau pokémon " Grid.Column="1" />
-            </Grid>
-
+          
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

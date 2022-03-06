@@ -2,10 +2,11 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:pages="clr-namespace:PokemonApplication.Pages"
        x:Class="PokemonApplication.MainPage"
-       BackgroundColor="#F0737A"
+       BackgroundColor="Red"
        TitleColor="White"
        UnselectedColor="Black"
        Shell.NavBarIsVisible="False">
+   
     <TabBar Title="Poke">
         <ShellContent  Title="Accueil" Icon="accueil.png">
             <pages:Page1/>
