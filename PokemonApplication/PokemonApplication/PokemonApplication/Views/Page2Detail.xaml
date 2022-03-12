@@ -4,9 +4,9 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout Padding="15" BackgroundColor="LightBlue">
+        <StackLayout Padding="15" BackgroundColor="{Binding Couleur} ">
             <ScrollView>
-                <Frame x:Name="MaCouleur" CornerRadius="50">
+                <Frame BackgroundColor="LightGray"  CornerRadius="50">
                     <StackLayout Padding="15" x:Name ="MaCouleur1" >
                         <Frame
                             
@@ -15,7 +15,7 @@
                             BorderColor="Black">
                             <Label
                                 
-                                x:Name="MonNom"
+                                Text="{Binding Name}"
                                 FontAttributes="Bold"
                                 FontFamily="Lobster-Regular"
                                 FontSize="Title"
@@ -25,28 +25,37 @@
                         </Frame>
 
                         <Image
-                            x:Name="MonImage"
+                            Source="{Binding Image}"
                             HeightRequest="200"
                             WidthRequest="300" />
-
-
-                        <Frame 
+                        <Label></Label>
+                        <StackLayout HorizontalOptions="CenterAndExpand"
+                                        Orientation="Horizontal" Spacing="40" >
                             
-                            >
-                            <Label
-                                x:Name="MonId"
-                            
-                                FontSize="Medium"
+                            <Frame  CornerRadius="15" >
+                                <Label
+                                Text="{Binding Type1}"
+                               FontSize="Medium"
                                 HorizontalTextAlignment="Center"
                                 TextColor="Black"
                                 />
-                        </Frame>
+                            </Frame>
+                            <Frame   CornerRadius="10" >
+                                <Label
+                                Text="{Binding Type2}"
+                               FontSize="Medium"
+                                HorizontalTextAlignment="Center"
+                                TextColor="Black"
+                                />
+                            </Frame>
+                        </StackLayout>
+
                         <Frame 
                             
                             
                             >
                             <Label
-                                x:Name="MaDescription"
+                               Text="{Binding Description}"
                                 FontSize="Medium"
                                 HorizontalTextAlignment="Center"
                                 TextColor="Black"
@@ -54,17 +63,12 @@
                         </Frame>
 
 
-                        <Frame 
-                            
-                            
-                            >
-                            <Label
-                                x:Name="MonType"
-                               FontSize="Medium"
-                                HorizontalTextAlignment="Center"
-                                TextColor="Black"
-                                />
-                        </Frame>
+
+
+
+
+                       
+                        
                         <Frame 
                             
                             
@@ -78,47 +82,52 @@
                                     Stats
                                 </Label>
                                 <Label
-                                    x:Name="MaStat1"
+                                    Text="Hp"
                                     FontSize="Medium"
                                   
                                     TextColor="Black"/>
                                 <ProgressBar
-                                    x:Name="ProgressBar1"
-                                    ProgressColor="Black"
+                                   Progress="{Binding Stat1}"
+                                    ProgressColor="{Binding Couleur}"
                                     WidthRequest="100" ScaleY="2" 
                                      />
                                 <Label
-                                    x:Name="MaStat2"
+                                    Text="Attack"
       
                                     FontSize="Medium"
                                     
                                 
                                     TextColor="Black"/>
 
-                                <ProgressBar x:Name="ProgressBar2" ScaleY="2" ProgressColor="Black" />
+                                <ProgressBar Progress="{Binding Stat2}"
+                                    ProgressColor="{Binding Couleur}" ScaleY="2"  />
                                 
                                 
                                 <Label
-                                    x:Name="MaStat3"
+                                    Text="Defense"
                                     FontSize="Medium"
                               
                                     TextColor="Black"/>
-                                <ProgressBar x:Name="ProgressBar3" ProgressColor="Black" ScaleY="2" />
+                                <ProgressBar Progress="{Binding Stat3}"
+                                    ProgressColor="{Binding Couleur}"  ScaleY="2" />
                                 <Label
-                                    x:Name="MaStat4"
+                                    Text="Special-attack"
                                     FontSize="Medium"
                                     TextColor="Black"/>
-                                <ProgressBar x:Name="ProgressBar4" ProgressColor="Black" ScaleY="2" />
+                                <ProgressBar Progress="{Binding Stat4}"
+                                    ProgressColor="{Binding Couleur}"  ScaleY="2" />
                                 <Label 
-                                    x:Name="MaStat5"
+                                    Text="Special-defense"
                                    FontSize="Medium"
                                     TextColor="Black"/>
-                                <ProgressBar x:Name="ProgressBar5"  ProgressColor="Black" ScaleY="2"/>
+                                <ProgressBar Progress="{Binding Stat5}"
+                                    ProgressColor="{Binding Couleur}"  ScaleY="2"/>
                                 <Label
-                                    x:Name="MaStat6"
+                                    Text="Speed"
                                     FontSize="Medium"
                                     TextColor="Black"/>
-                                <ProgressBar x:Name="ProgressBar6" ProgressColor="Black" ScaleY="2"/>
+                                <ProgressBar Progress="{Binding Stat6}"
+                                    ProgressColor="{Binding Couleur}"  ScaleY="2"/>
                             </StackLayout>
                         </Frame>
 

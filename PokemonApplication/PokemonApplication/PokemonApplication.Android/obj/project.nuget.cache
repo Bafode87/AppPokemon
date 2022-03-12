@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+mnIucaUq8XV7zzc6cXDGIMjuoXJdDEzYvdcmlA1Du5SdeLe06u6yEhF7sWfxlCbbcaMa5FX1SYP6eFr+9nc9Q==",
+  "dgSpecHash": "LlIJfF9esp7K/MN4WpeXNk9Arpi8NOMw9nDj0MS6FH/XM5T3XReD2/1Lv4XRksY1oTkvlSJyZ7eisp0l6HW2oQ==",
   "success": true,
   "projectFilePath": "C:\\PokeApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\PokemonApplication.Android.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\bafod\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.0\\system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\bafod\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HUakJS2ihCzR58mdoNuNxcMujeGxuK0OidrETU83Fm1NwGuMHP+ABTzckfz3IXpnhErNFI78nMfvAoaKOqGjeg==",
+  "dgSpecHash": "GrCPlf5Rn8wtlK/kf560Z9ExTBQE5g2jpLpJbVmeKq/MEmlwDDEDI8PncjkseS0WiHq0pxSDOt1hyWcxkzdLHA==",
   "success": true,
   "projectFilePath": "C:\\PokeApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\bafod\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.0\\system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\bafod\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\xamarin.essentials\\1.7.1\\xamarin.essentials.1.7.1.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\xamarin.forms\\5.0.0.2337\\xamarin.forms.5.0.0.2337.nupkg.sha512"
   ],

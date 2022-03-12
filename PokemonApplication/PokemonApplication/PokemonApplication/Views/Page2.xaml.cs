@@ -25,11 +25,18 @@ namespace PokemonApplication.Pages
 
         }
 
-       private async void OnItemSelected(Object sender, ItemTappedEventArgs e)
+       private async void OnItemSelected(Object sender, SelectionChangedEventArgs e)
         {
-            var item = e.Item as PokemonModel;
-            await Navigation.PushAsync(new Page2Detail(item.Name, item.Id, item.Type1, item.Type2, item.Stat1, item.Stat2, item.Stat3, item.Stat4, item.Stat5, item.Stat6, item.NomStat1, item.NomStat2, item.NomStat3, item.NomStat4, item.NomStat5, item.NomStat6, item.Couleur, item.Description, item.ImageShiny)) ;
+            PokemonModel selectedPokemon = (e.CurrentSelection.FirstOrDefault() as PokemonModel);
+            if (selectedPokemon == null)
+            {
+                return;
+            }
+            (sender as CollectionView).SelectedItem = null;
+            await Navigation.PushAsync(new Page2Detail(selectedPokemon));
         }
+
+      
     }
 
 }

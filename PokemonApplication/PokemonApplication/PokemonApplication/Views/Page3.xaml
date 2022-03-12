@@ -1,11 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PokemonApplication.Pages.Page3">
+<ContentPage
+    x:Class="PokemonApplication.Pages.Page3"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout Padding="15">
-           
-          
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <Entry x:Name="newPokemonName" Placeholder="Nom" />
+                <Button
+                    x:Name="TakePictureButton"
+                    Clicked="OnTakePicture"
+                    Text="Choisir une image" />
+
+
+                <Image x:Name="image" IsVisible="False" />
+
+
+                <Picker
+                    x:Name="picker"
+                    Title="Select a monkey"
+                    TitleColor="Red">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>normal</x:String>
+                            <x:String>fire</x:String>
+                            <x:String>water</x:String>
+                            <x:String>electric</x:String>
+                            <x:String>grass</x:String>
+                            <x:String>ice</x:String>
+                            <x:String>fighting</x:String>
+                            <x:String>poison</x:String>
+                            <x:String>ground</x:String>
+                            <x:String>flying</x:String>
+                            <x:String>psychic</x:String>
+                            <x:String>bug</x:String>
+                            <x:String>rock</x:String>
+                            <x:String>ghost</x:String>
+                            <x:String>dragon</x:String>
+                            <x:String>dark</x:String>
+                            <x:String>steel</x:String>
+                            <x:String>fairy</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Label x:Name="test" />
+
+                <Button
+                    x:Name="newButton"
+                    Clicked="OnNewButtonClicked"
+                    Text="Ajouter" />
+
+
+                <Label x:Name="statusMessage" />
+
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

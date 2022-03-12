@@ -1,48 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PokemonApplication.Pages.Page2">
+<ContentPage
+    x:Class="PokemonApplication.Pages.Page2"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout  Padding="15" BackgroundColor="LightBlue">
+        <StackLayout Padding="15" BackgroundColor="LightGray">
             <Image Source="pokeAppli.png" WidthRequest="200" />
 
-            <ListView ItemsSource="{Binding MyList}"    
-                      HasUnevenRows="True"
-                      SeparatorVisibility="None"
-                      ItemTapped="OnItemSelected"
-                      
-                       
-                      
-                     >
+            
+            <CollectionView
+                ItemsSource="{Binding MyList}"
+                SelectionChanged="OnItemSelected"
+                SelectionMode="Single">
 
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid Padding="10" BackgroundColor="LightBlue">
-                                <Frame CornerRadius="10" HasShadow="True" BackgroundColor="{Binding Couleur}">
-                                    <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="CenterAndExpand" >
-                                        <Frame CornerRadius="100" BorderColor="Black"   >
-                                            <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100"></Image>
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="1"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10" BackgroundColor="LightGray">
+                                <Frame
+                                    BackgroundColor="{Binding Couleur}"
+                                    CornerRadius="10"
+                                    HasShadow="True">
+                                    <StackLayout
+                                        HorizontalOptions="CenterAndExpand"
+                                        Orientation="Horizontal"
+                                        Spacing="30">
+                                        <Frame BorderColor="Black" CornerRadius="100">
+                                            <Image
+                                                HeightRequest="100"
+                                                Source="{Binding Image}"
+                                                WidthRequest="100" />
                                         </Frame>
-                                        <Frame VerticalOptions="CenterAndExpand"   CornerRadius="15" WidthRequest="150" BackgroundColor="White" BorderColor="Black">
+                                        <Frame
+                                            BackgroundColor="White"
+                                            BorderColor="Black"
+                                            CornerRadius="15"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest="150">
                                             <StackLayout>
-                                            <Label VerticalOptions="Center" Text="{Binding Name}"  FontAttributes="Bold" FontFamily="Lobster"  TextTransform="Uppercase" ></Label>
+                                                <Label
+                                                    FontAttributes="Bold"
+                                                    FontFamily="Lobster"
+                                                    Text="{Binding Name}"
+                                                    TextTransform="Uppercase"
+                                                    VerticalOptions="Center" />
                                                 <FlexLayout>
-                                                <Image Source="pokeball.png" WidthRequest="20" HeightRequest="20"></Image>
-                                                    <Label Text="{Binding Id, StringFormat='N.{0:F0}'}"/>
+                                                    <Image
+                                                        HeightRequest="20"
+                                                        Source="pokeball.png"
+                                                        WidthRequest="20" />
+                                                    <Label Text="{Binding Id, StringFormat='N.{0:F0}'}" />
                                                 </FlexLayout>
                                             </StackLayout>
                                         </Frame>
-                                        
-                                        
+
+
                                     </StackLayout>
                                 </Frame>
                             </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
 
-            </ListView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                
+            </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

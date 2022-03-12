@@ -11,6 +11,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Extensions.Options.dll",
 		"Microsoft.Extensions.Primitives.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Media.dll",
 		"PokeApiNet.dll",
 		"PokemonApplication.dll",
 		"SQLite-net.dll",
