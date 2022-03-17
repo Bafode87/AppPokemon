@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PokemonApplication.Views.HomeView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <FlexLayout Padding="15" BackgroundColor="LightGray">
+            <ScrollView>
+                <StackLayout>
+
+
+                    <Image Source="pokeAppli.png" WidthRequest="200" />
+
+                    <Image
+                        Margin="15"
+                        Source="pikachu.png"
+                        WidthRequest="200" />
+
+                    <Label
+                        Padding="15"
+                        FontSize="Default"
+                        HorizontalTextAlignment="Center"
+                        Text="Bienvenue dans l'univers incroyable des pokémons ! Notre application crée en mars 2022 comporte trois fonctionnalités :  " />
+
+
+                    <Label
+                        FontAttributes="Bold,Italic"
+                        FontFamily="Lobster-Regular"
+                        FontSize="Title"
+                        HorizontalTextAlignment="Center"
+                        InputTransparent="True"
+                        Text="Commencez l'aventure !" />
+
+                </StackLayout>
+            </ScrollView>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

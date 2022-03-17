@@ -47,6 +47,4 @@ namespace PokemonApplication.ViewModels
                 handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
-    
-
 }

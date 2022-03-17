@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace PokemonApplication.Pages
+namespace PokemonApplication.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page4 : ContentPage

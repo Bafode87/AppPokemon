@@ -36,6 +36,21 @@ namespace PokemonApplication.Repository
             }
         }
 
+        public async Task DeletePokemon(PokemonModel pokemon)
+        {
+            int result = 0;
+
+            try
+            {
+                result = await connection.DeleteAsync(pokemon);
+                StatusMessage = $"Le pokémon n° {pokemon.Name} a été supprimé au pokedex";
+            }
+            catch(Exception ex)
+            {
+                StatusMessage = $"Imposible de supprimer le pokémon n° {pokemon.Name}.\n Erreur : {ex.Message}";
+            }
+        }
+
         public async Task<List<PokemonModel>> GetPokemonList()
         {
             try

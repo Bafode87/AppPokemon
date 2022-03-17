@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PokemonApplication.Views.Page4.xaml", "Views/Page4.xaml", typeof(global::PokemonApplication.Pages.Page4))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PokemonApplication.Views.Page4.xaml", "Views/Page4.xaml", typeof(global::PokemonApplication.Views.Page4))]
 
-namespace PokemonApplication.Pages {
+namespace PokemonApplication.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Page4.xaml")]

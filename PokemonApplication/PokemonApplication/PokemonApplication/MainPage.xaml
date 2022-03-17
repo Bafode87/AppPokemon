@@ -1,24 +1,25 @@
-﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
-       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:pages="clr-namespace:PokemonApplication.Pages"
-       x:Class="PokemonApplication.MainPage"
-       BackgroundColor="Red"
-       TitleColor="White"
-       UnselectedColor="Black"
-       Shell.NavBarIsVisible="False">
-   
+﻿<Shell
+    x:Class="PokemonApplication.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:PokemonApplication.Views"
+    BackgroundColor="Red"
+    Shell.NavBarIsVisible="False"
+    TitleColor="White"
+    UnselectedColor="Black">
+
     <TabBar Title="Poke">
-        <ShellContent  Title="Accueil" Icon="accueil.png">
-            <pages:Page1/>
+        <ShellContent Title="Accueil" Icon="home.png">
+            <pages:HomeView />
         </ShellContent>
-        <ShellContent  Title="Pokedex" Icon="pokedex.png">
-            <pages:Page2/>
+        <ShellContent Title="Pokedex" Icon="pokedex.png">
+            <pages:ListOfPokemonView />
         </ShellContent>
-        <ShellContent  Title="Ajout" Icon="ajout.png">
-            <pages:Page3/>
+        <ShellContent Title="Ajout" Icon="add.png">
+            <pages:Page3 />
         </ShellContent>
-        <ShellContent  Title="Equipes" Icon="equipe.png">
-            <pages:Page4/>
+        <ShellContent Title="Equipes" Icon="team.png">
+            <pages:Page4 />
         </ShellContent>
     </TabBar>
 </Shell>

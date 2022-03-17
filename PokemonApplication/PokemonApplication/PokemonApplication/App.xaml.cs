@@ -10,6 +10,7 @@ namespace PokemonApplication
         string dbPath = Path.Combine(FileSystem.AppDataDirectory, "database.db3" );
         
         public static PokemonRepository PokemonRepository { get; private set; }
+
         public App()
         {
             InitializeComponent();

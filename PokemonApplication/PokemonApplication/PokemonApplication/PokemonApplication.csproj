@@ -19,14 +19,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
+    <Compile Update="Views\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Page4.xaml.cs">
       <DependentUpon>Page4.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\Page2.xaml.cs">
-      <DependentUpon>Page2.xaml</DependentUpon>
+    <Compile Update="Views\ListOfPokemonView.xaml.cs">
+      <DependentUpon>ListOfPokemonView.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Page3.xaml.cs">
       <DependentUpon>Page3.xaml</DependentUpon>
@@ -34,10 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\Page1.xaml">
+    <EmbeddedResource Update="Views\HomeView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Page2.xaml">
+    <EmbeddedResource Update="Views\ListOfPokemonView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Page2Detail.xaml">

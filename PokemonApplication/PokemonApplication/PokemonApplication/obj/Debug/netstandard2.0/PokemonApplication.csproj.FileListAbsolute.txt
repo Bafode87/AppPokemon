@@ -5,8 +5,8 @@ C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\o
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\PokemonApplication.GeneratedMSBuildEditorConfig.editorconfig
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page1.xaml.g.cs
-C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page2.xaml.g.cs
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\HomeView.xaml.g.cs
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\ListOfPokemonView.xaml.g.cs
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page2Detail.xaml.g.cs
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page3.xaml.g.cs
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication\obj\Debug\netstandard2.0\Views\Page4.xaml.g.cs

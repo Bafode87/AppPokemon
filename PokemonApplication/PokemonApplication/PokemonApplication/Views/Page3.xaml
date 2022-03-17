@@ -1,58 +1,195 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="PokemonApplication.Pages.Page3"
+    x:Class="PokemonApplication.Views.Page3"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="15">
-                <Entry x:Name="newPokemonName" Placeholder="Nom" />
-                <Button
-                    x:Name="TakePictureButton"
-                    Clicked="OnTakePicture"
-                    Text="Choisir une image" />
+            <StackLayout Padding="15" BackgroundColor="LightGray">
+                <Image Source="pokeAppli.png" WidthRequest="200" />
+                <Label
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Red">
+                    Les éléments en rouges doivent être renseignés
+                </Label>
+                <StackLayout BackgroundColor="LightGray" Orientation="Horizontal">
+
+                    <Frame
+                        BackgroundColor="LightGray"
+                        BorderColor="Red"
+                        CornerRadius="100">
+                        <ImageButton
+                            x:Name="image"
+                            Clicked="OnTakePicture"
+                            CornerRadius="100"
+                            HeightRequest="150"
+                            Source="ajoutPhoto.png"
+                            WidthRequest="150" />
+                    </Frame>
+                    <StackLayout Orientation="Vertical">
+                        <Label x:Name="lbl" IsVisible="False" />
+                        <Entry
+                            x:Name="pokemonName"
+                            ClearButtonVisibility="WhileEditing"
+                            Placeholder="Nom"
+                            PlaceholderColor="Red"
+                            WidthRequest="180" />
 
 
-                <Image x:Name="image" IsVisible="False" />
+                        <Picker
+                            x:Name="pickerType1"
+                            Title="Type1"
+                            TitleColor="Red">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>normal</x:String>
+                                    <x:String>feu</x:String>
+                                    <x:String>eau</x:String>
+                                    <x:String>électrik</x:String>
+                                    <x:String>plante</x:String>
+                                    <x:String>glace</x:String>
+                                    <x:String>combat</x:String>
+                                    <x:String>poison</x:String>
+                                    <x:String>sol</x:String>
+                                    <x:String>vol</x:String>
+                                    <x:String>psy</x:String>
+                                    <x:String>insecte</x:String>
+                                    <x:String>roche</x:String>
+                                    <x:String>spectre</x:String>
+                                    <x:String>dragon</x:String>
+                                    <x:String>tenebre</x:String>
+                                    <x:String>acier</x:String>
+                                    <x:String>fee</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                        <Picker x:Name="pickerType2" Title="Type2">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>normal</x:String>
+                                    <x:String>feu</x:String>
+                                    <x:String>eau</x:String>
+                                    <x:String>électrik</x:String>
+                                    <x:String>plante</x:String>
+                                    <x:String>glace</x:String>
+                                    <x:String>combat</x:String>
+                                    <x:String>poison</x:String>
+                                    <x:String>sol</x:String>
+                                    <x:String>vol</x:String>
+                                    <x:String>psy</x:String>
+                                    <x:String>insecte</x:String>
+                                    <x:String>roche</x:String>
+                                    <x:String>spectre</x:String>
+                                    <x:String>dragon</x:String>
+                                    <x:String>tenebre</x:String>
+                                    <x:String>acier</x:String>
+                                    <x:String>fee</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </StackLayout>
+                </StackLayout>
+                <Entry
+                    x:Name="pokemonDescription"
+                    ClearButtonVisibility="WhileEditing"
+                    Placeholder="Description"
+                    WidthRequest="250" />
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+
+                    <Entry
+                        x:Name="pokemonWeight"
+                        ClearButtonVisibility="WhileEditing"
+                        Keyboard="Numeric"
+                        Placeholder="Poids"
+                        PlaceholderColor="Red"
+                        WidthRequest="180" />
+
+                    <Entry
+                        x:Name="pokemonHeight"
+                        ClearButtonVisibility="WhileEditing"
+                        Keyboard="Numeric"
+                        Placeholder="Taille"
+                        PlaceholderColor="Red"
+                        WidthRequest="180" />
+
+                </StackLayout>
 
 
-                <Picker
-                    x:Name="picker"
-                    Title="Select a monkey"
-                    TitleColor="Red">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>normal</x:String>
-                            <x:String>fire</x:String>
-                            <x:String>water</x:String>
-                            <x:String>electric</x:String>
-                            <x:String>grass</x:String>
-                            <x:String>ice</x:String>
-                            <x:String>fighting</x:String>
-                            <x:String>poison</x:String>
-                            <x:String>ground</x:String>
-                            <x:String>flying</x:String>
-                            <x:String>psychic</x:String>
-                            <x:String>bug</x:String>
-                            <x:String>rock</x:String>
-                            <x:String>ghost</x:String>
-                            <x:String>dragon</x:String>
-                            <x:String>dark</x:String>
-                            <x:String>steel</x:String>
-                            <x:String>fairy</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
+                <Label x:Name="hpLabel" Text="PV : 50" />
 
+                <Slider
+                    x:Name="hpSlider"
+                    Maximum="100"
+                    Minimum="0"
+                    MinimumTrackColor="Gray"
+                    ThumbImageSource="pokemon.png"
+                    ValueChanged="OnHpSliderValueChanged"
+                    Value="50" />
+
+                <Label x:Name="attackLabel" Text="ATT : 50" />
+
+                <Slider
+                    x:Name="attackSlider"
+                    Maximum="100"
+                    Minimum="0"
+                    MinimumTrackColor="Gray"
+                    ThumbImageSource="pokemon.png"
+                    ValueChanged="OnAttackSliderValueChanged"
+                    Value="50" />
+
+                <Label x:Name="defenseLabel" Text="DEF: 50" />
+
+                <Slider
+                    x:Name="defenseSlider"
+                    Maximum="100"
+                    Minimum="0"
+                    MinimumTrackColor="Gray"
+                    ThumbImageSource="pokemon.png"
+                    ValueChanged="OnDefenseSliderValueChanged"
+                    Value="50" />
+
+                <Label x:Name="specialAttackLabel" Text="SP ATT : 50" />
+
+                <Slider
+                    x:Name="specialAttackSlider"
+                    Maximum="100"
+                    Minimum="0"
+                    MinimumTrackColor="Gray"
+                    ThumbImageSource="pokemon.png"
+                    ValueChanged="OnSpecialAttackSliderValueChanged"
+                    Value="50" />
+                <Label x:Name="specialDefenseLabel" Text="SP DEF : 50" />
+
+                <Slider
+                    x:Name="specialDefenseSlider"
+                    Maximum="100"
+                    Minimum="0"
+                    MinimumTrackColor="Gray"
+                    ThumbImageSource="pokemon.png"
+                    ValueChanged="OnSpecialDefsenseSliderValueChanged"
+                    Value="50" />
+
+                <Label x:Name="speedLabel" Text="VIT : 50" />
+
+                <Slider
+                    x:Name="speedSlider"
+                    Maximum="100"
+                    Minimum="0"
+                    MinimumTrackColor="Gray"
+                    ThumbImageSource="pokemon.png"
+                    ValueChanged="OnSpeedSliderValueChanged"
+                    Value="50" />
                 <Label x:Name="test" />
 
                 <Button
                     x:Name="newButton"
+                    BackgroundColor="White"
                     Clicked="OnNewButtonClicked"
                     Text="Ajouter" />
 
 
-                <Label x:Name="statusMessage" />
+
 
 
             </StackLayout>

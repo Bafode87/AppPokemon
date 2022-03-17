@@ -18,6 +18,8 @@ C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.i
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.iOS\bin\iPhone\Debug\System.Memory.dll
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.iOS\bin\iPhone\Debug\System.Text.Encodings.Web.dll
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.iOS\bin\iPhone\Debug\Plugin.Media.dll
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.iOS\bin\iPhone\Debug\Plugin.Media.pdb
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
