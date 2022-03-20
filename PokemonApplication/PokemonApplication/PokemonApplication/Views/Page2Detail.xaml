@@ -8,7 +8,6 @@
             <ScrollView>
                 <Frame BackgroundColor="LightGray" CornerRadius="50">
                     <StackLayout x:Name="MaCouleur1" Padding="15">
-                        <Label Text="{Binding FlavorTextEntries}" TextColor="White" />
                         <Frame
                             Margin="15"
                             BorderColor="Black"
@@ -20,7 +19,7 @@
                                 HorizontalTextAlignment="Center"
                                 Text="{Binding Name}"
                                 TextColor="Black"
-                                TextTransform="Uppercase" />
+                                 />
                         </Frame>
 
                         <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
@@ -57,13 +56,13 @@
                             <Label
                                 x:Name="IdOfPokemon"
                                 FontSize="Title"
-                                Text="{Binding Id, StringFormat='N.{0}'}"
+                                Text="{Binding Id}"
                                 TextColor="Black" />
                         </StackLayout>
 
                         <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
                             <Frame
-                                Margin="0,0,30,0"
+                               
                                 BackgroundColor="{Binding ColorType1}"
                                 CornerRadius="15">
                                 <StackLayout Orientation="Horizontal">
@@ -74,7 +73,7 @@
                                         TextColor="Black" />
                                 </StackLayout>
                             </Frame>
-                            <Frame BackgroundColor="{Binding ColorType2}" CornerRadius="10">
+                            <Frame BackgroundColor="{Binding ColorType2}"   Margin="30,0,0,0" IsVisible="{Binding VisibilityOfType2}" CornerRadius="10">
                                 <StackLayout Orientation="Horizontal">
                                     <Image Source="{Binding LogoType2}" WidthRequest="20" />
                                     <Label
@@ -148,7 +147,7 @@
                                 Spacing="-10">
 
 
-                                <StackLayout Spacing="45">
+                                <StackLayout Spacing="40">
 
                                     <ProgressBar
                                         Progress="{Binding HpStatistics}"
@@ -158,7 +157,7 @@
                                         ScaleY="5" />
 
                                     <Label
-                                        FontSize="Medium"
+                                        FontSize="Small"
                                         HorizontalOptions="Center"
                                         Text="Pv"
                                         TextColor="Black" />
@@ -166,23 +165,24 @@
 
                                 </StackLayout>
 
-                                <StackLayout Spacing="45">
+                                <StackLayout Spacing="40">
 
 
                                     <ProgressBar
                                         Progress="{Binding AttackStatistics}"
                                         ProgressColor="{Binding ColorType1}"
                                         Rotation="-90"
+                                        Margin="0,10,0,0"
                                         ScaleX="2"
                                         ScaleY="5" />
                                     <Label
-                                        FontSize="Medium"
+                                        FontSize="Small"
                                         HorizontalTextAlignment="Center"
                                         Text="Att"
                                         TextColor="Black" />
                                 </StackLayout>
 
-                                <StackLayout Spacing="45">
+                                <StackLayout Spacing="40">
                                     <ProgressBar
                                         Progress="{Binding DefenseStatistics}"
                                         ProgressColor="{Binding ColorType1}"
@@ -190,27 +190,28 @@
                                         ScaleX="2"
                                         ScaleY="5" />
                                     <Label
-                                        FontSize="Medium"
+                                        FontSize="Small"
                                         HorizontalTextAlignment="Center"
                                         Text="Déf"
                                         TextColor="Black" />
                                 </StackLayout>
 
-                                <StackLayout Spacing="45">
+                                <StackLayout Spacing="40">
 
                                     <ProgressBar
                                         Progress="{Binding SpecialAttackStatistics}"
                                         ProgressColor="{Binding ColorType1}"
                                         Rotation="-90"
                                         ScaleX="2"
+                                        Margin="0,10,0,0"
                                         ScaleY="5" />
                                     <Label
-                                        FontSize="Medium"
+                                        FontSize="Small"
                                         HorizontalTextAlignment="Center"
-                                        Text="Att Sp"
+                                        Text="Att sp"
                                         TextColor="Black" />
                                 </StackLayout>
-                                <StackLayout Spacing="45">
+                                <StackLayout Spacing="40">
 
                                     <ProgressBar
                                         Progress="{Binding SpecialDefenseStatistics}"
@@ -219,21 +220,23 @@
                                         ScaleX="2"
                                         ScaleY="5" />
                                     <Label
-                                        FontSize="Medium"
+                                        FontSize="Small"
                                         HorizontalTextAlignment="Center"
-                                        Text="Déf Sp"
+                                        VerticalOptions="End"
+                                        Text="Déf sp"
                                         TextColor="Black" />
                                 </StackLayout>
-                                <StackLayout Spacing="45">
+                                <StackLayout Spacing="40">
 
                                     <ProgressBar
                                         Progress="{Binding SpeedStatistics}"
                                         ProgressColor="{Binding ColorType1}"
                                         Rotation="-90"
                                         ScaleX="2"
+                                        Margin="0,10,0,0"
                                         ScaleY="5" />
                                     <Label
-                                        FontSize="Medium"
+                                        FontSize="Small"
                                         HorizontalTextAlignment="Center"
                                         Text="Vit"
                                         TextColor="Black" />
@@ -242,9 +245,9 @@
                         </Frame>
                         <Button
                             BackgroundColor="White"
-                            
                             CornerRadius="10"
-                            Text="Supprimer le pokemon du pokedex" />
+                            Clicked="deletePokemon"
+                            Text="Supprimer ce pokemon" />
                         <Button
                             BackgroundColor="White"
                             Clicked="Button_Clicked"

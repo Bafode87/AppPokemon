@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
 using PokemonApplication.Models;
+using PokemonApplication.ViewModels;
 using SQLite;
 
 namespace PokemonApplication.Repository
@@ -32,22 +33,23 @@ namespace PokemonApplication.Repository
             }
             catch (Exception ex)
             {
-                StatusMessage = $"Imposible d'ajouter le pokémon : {pokemon.Name}.\n Erreur : {ex.Message}";
+                StatusMessage = "1";
             }
         }
 
-        public async Task DeletePokemon(PokemonModel pokemon)
+        public async Task DeletePokemon(int i)
         {
             int result = 0;
 
             try
             {
-                result = await connection.DeleteAsync(pokemon);
-                StatusMessage = $"Le pokémon n° {pokemon.Name} a été supprimé au pokedex";
+                result = await connection.Table<PokemonModel>().Where(p => p.Id == i).DeleteAsync();
+                StatusMessage = $"Le pokémon n° {i} a été supprimé au pokedex";
+               
             }
             catch(Exception ex)
             {
-                StatusMessage = $"Imposible de supprimer le pokémon n° {pokemon.Name}.\n Erreur : {ex.Message}";
+                StatusMessage = $"Imposible de supprimer le pokémon n° {i}.\n Erreur : {ex.Message}";
             }
         }
 
@@ -67,6 +69,5 @@ namespace PokemonApplication.Repository
         }
 
 
-  
     }
 }

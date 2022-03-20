@@ -27,11 +27,10 @@ namespace PokemonApplication.Models
             {"spectre" ,("#735797","ghost.png") },
             {"dragon" ,("#6F35FC","dragon.png") },
             {"tenebre" ,("#705746","dark.png") },
-            {"acier" ,("#B7B7CE","steel") },
-            {"fée" ,("#D685AD","fairy") },
-
-           
-
+            {"acier" ,("#B7B7CE","steel.png") },
+            {"fée" ,("#D685AD","fairy.png") },
         };
+
+        
     }
 }

@@ -24,24 +24,35 @@ namespace PokemonApplication.Views
 
         private async void deletePokemon(object sender, EventArgs e)
         {
-            foreach (var pokemoni in await App.PokemonRepository.GetPokemonList())
-            {
-                int id = Convert.ToInt16(IdOfPokemon.Text);
-                if (pokemoni.Id == id )
-                {
-                    await App.PokemonRepository.DeletePokemon(pokemoni);
-                }
-                
-            }
+            int id = Convert.ToInt16(IdOfPokemon.Text);
+            //foreach (var pokemoni in await App.PokemonRepository.GetPokemonList())
+            //{
+            //    int id = 
+            //    if (pokemoni.Id == id )
+            //    {
+            bool answer = await DisplayAlert("Suppression", "Êtes vous sur de vouloir supprimer ce pokemon ?", "Oui", "Non");
 
-            
-            ListOfPokomonViewModel.Instance.MyList.Clear();
-            foreach (var pokemoni in await App.PokemonRepository.GetPokemonList())
+            if (answer)
             {
-               
-                ListOfPokomonViewModel.Instance.MyList.Add(pokemoni);
+                await App.PokemonRepository.DeletePokemon(id);
+                //    }
+
+                //}
+
+
+                ListOfPokomonViewModel.Instance.MyList.Clear();
+                foreach (var poke in await App.PokemonRepository.GetPokemonList())
+                {
+                    ListOfPokomonViewModel.Instance.MyList.Add(poke);
+                }
+                //foreach (var pokemoni in await App.PokemonRepository.GetPokemonList())
+                //{
+
+                //    ListOfPokomonViewModel.Instance.MyList.Add(pokemoni);
+                //}
+                await Navigation.PushAsync(new ListOfPokemonView());
+                DisplayAlert("Suppression", "Le pokemon a bien été supprimé.", "OK");
             }
-            await Navigation.PushAsync(new ListOfPokemonView());
 
         }
     }

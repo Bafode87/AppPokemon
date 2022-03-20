@@ -4,11 +4,75 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout>
-            <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="Page 4"
-                VerticalOptions="CenterAndExpand" />
+        <StackLayout Padding="15" BackgroundColor="LightGray">
+            <Image Source="pokeAppli.png" WidthRequest="200" />
+
+           
+            <CollectionView
+                x:Name="MyCollectionView"
+                ItemsSource="{Binding MyList}"
+         SelectedItem=" OnItemSelected"
+                SelectionMode="Single">
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout
+                        Orientation="Vertical"
+                        Span="1"
+                        VerticalItemSpacing="1" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid Padding="10" BackgroundColor="LightGray">
+                            <Frame
+                                BackgroundColor="{Binding ColorType1}"
+                                CornerRadius="10"
+                                HasShadow="True">
+                                <StackLayout
+                                    HorizontalOptions="CenterAndExpand"
+                                    Orientation="Horizontal"
+                                    Spacing="30">
+
+                                    <Frame BorderColor="Black" CornerRadius="100">
+                                        <ImageButton
+                                            BackgroundColor="White"
+                                            CornerRadius="100"
+                                            HeightRequest="100"
+                                            Source="{Binding FrontPicture}"
+                                            WidthRequest="100" />
+                                    </Frame>
+                                    <Frame
+                                        BackgroundColor="White"
+                                        BorderColor="Black"
+                                        CornerRadius="15"
+                                        VerticalOptions="CenterAndExpand"
+                                        WidthRequest="150">
+                                        <StackLayout>
+                                            <Label
+                                                FontAttributes="Bold"
+                                                FontFamily="Lobster"
+                                                Text="{Binding Name}"
+                                                VerticalOptions="Center" />
+                                            <FlexLayout>
+                                                <Image
+                                                    HeightRequest="20"
+                                                    Source="pokeball.png"
+                                                    WidthRequest="20" />
+                                                <Label Text="{Binding Id, StringFormat='N.{0}'}" />
+                                            </FlexLayout>
+                                        </StackLayout>
+                                    </Frame>
+
+
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+
+            </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -36,7 +36,11 @@ namespace PokemonApplication.Views
             await Navigation.PushAsync(new Page2Detail(selectedPokemon));
         }
 
-        
+        private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var filteredList = ListOfPokomonViewModel.Instance.MyList.Where(p => p.Name.StartsWith(e.NewTextValue.ToUpper()));
+            MyCollectionView.ItemsSource = filteredList;
+        }
     }
 
 }

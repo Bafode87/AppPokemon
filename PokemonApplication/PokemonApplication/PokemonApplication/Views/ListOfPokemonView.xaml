@@ -7,8 +7,15 @@
         <StackLayout Padding="15" BackgroundColor="LightGray">
             <Image Source="pokeAppli.png" WidthRequest="200" />
 
-
+            <SearchBar
+            
+                BackgroundColor="White"
+                x:Name="searchBar"
+   TextTransform="Uppercase"
+                Placeholder="Rechercher un pokemon"
+                TextChanged="searchBar_TextChanged" />
             <CollectionView
+                x:Name="MyCollectionView"
                 ItemsSource="{Binding MyList}"
                 SelectionChanged="OnItemSelected"
                 SelectionMode="Single">
@@ -32,10 +39,9 @@
                                     Orientation="Horizontal"
                                     Spacing="30">
 
-                                    <Frame BorderColor="Black" CornerRadius="100" >
+                                    <Frame BorderColor="Black" CornerRadius="100">
                                         <ImageButton
-                                             
-                                        BackgroundColor="White"
+                                            BackgroundColor="White"
                                             CornerRadius="100"
                                             HeightRequest="100"
                                             Source="{Binding FrontPicture}"
@@ -48,11 +54,11 @@
                                         VerticalOptions="CenterAndExpand"
                                         WidthRequest="150">
                                         <StackLayout>
-                                            <Label 
+                                            <Label
                                                 FontAttributes="Bold"
                                                 FontFamily="Lobster"
                                                 Text="{Binding Name}"
-                                                TextTransform="Uppercase"
+                                                
                                                 VerticalOptions="Center" />
                                             <FlexLayout>
                                                 <Image

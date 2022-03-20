@@ -682,3 +682,4 @@ C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.A
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.Android\obj\Debug\120\res\drawable\water.png
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.Android\obj\Debug\120\res\drawable\normal.png
 C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.Android\obj\Debug\120\res\drawable\fire.png
+C:\PokeApp\AppPokemon\PokemonApplication\PokemonApplication\PokemonApplication.Android\obj\Debug\120\res\drawable\nophoto.png
