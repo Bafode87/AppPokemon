@@ -8,7 +8,7 @@ namespace PokemonApplication.Models
 {
     public class TypeModel
     {
-        //Dictionary contenant les 18 types de Pokémon et les couleurs qui les caractérisent.
+        //Dictionary contenant les 18 types de Pokémon et les couleurs et logos qui les caractérisent.
         public static Dictionary<string, (string,string)> typesOfPokemon { get; } = new Dictionary<string, (string,string)>
         {
             { "normal", ("#A8A77A", "normal.png") },

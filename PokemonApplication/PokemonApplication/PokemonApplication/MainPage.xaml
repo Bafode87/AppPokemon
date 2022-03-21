@@ -16,10 +16,10 @@
             <pages:ListOfPokemonView />
         </ShellContent>
         <ShellContent Title="Ajout" Icon="add.png">
-            <pages:Page3 />
+            <pages:AddPokemonView />
         </ShellContent>
         <ShellContent Title="Equipes" Icon="team.png">
-            <pages:Page4 />
+            <pages:TeamView />
         </ShellContent>
     </TabBar>
 </Shell>

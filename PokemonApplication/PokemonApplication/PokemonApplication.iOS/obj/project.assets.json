@@ -2443,11 +2443,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PokeApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.iOS\\PokemonApplication.iOS.csproj",
+      "projectUniqueName": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.iOS\\PokemonApplication.iOS.csproj",
       "projectName": "PokemonApplication.iOS",
-      "projectPath": "C:\\PokeApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.iOS\\PokemonApplication.iOS.csproj",
+      "projectPath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.iOS\\PokemonApplication.iOS.csproj",
       "packagesPath": "C:\\Users\\bafod\\.nuget\\packages\\",
-      "outputPath": "C:\\PokeApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.iOS\\obj\\",
+      "outputPath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2462,8 +2462,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\PokeApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj": {
-              "projectPath": "C:\\PokeApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj"
+            "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj": {
+              "projectPath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj"
             }
           }
         }

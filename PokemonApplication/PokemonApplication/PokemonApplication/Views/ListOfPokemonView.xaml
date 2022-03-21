@@ -8,12 +8,11 @@
             <Image Source="pokeAppli.png" WidthRequest="200" />
 
             <SearchBar
-            
-                BackgroundColor="White"
                 x:Name="searchBar"
-   TextTransform="Uppercase"
+                BackgroundColor="White"
                 Placeholder="Rechercher un pokemon"
-                TextChanged="searchBar_TextChanged" />
+                TextChanged="searchBar_TextChanged"
+                TextTransform="Uppercase" />
             <CollectionView
                 x:Name="MyCollectionView"
                 ItemsSource="{Binding MyList}"
@@ -58,7 +57,6 @@
                                                 FontAttributes="Bold"
                                                 FontFamily="Lobster"
                                                 Text="{Binding Name}"
-                                                
                                                 VerticalOptions="Center" />
                                             <FlexLayout>
                                                 <Image

@@ -5,14 +5,15 @@ using System.Collections.Generic;
 
 namespace PokemonApplication.Models
 {
-    // Création d'une table "Pokemon" dans la base de données avec les attributs de la classe. 
+    //Création d'une table "Pokemon" dans la base de données
     [Table("Pokemon")]
     public class PokemonModel
     {   
-       // Dans la base de données, l'attribut Name doit être unique (Unique) et non nul (NotNull).
+       // Le champ ne peut pas être nul et il doit être unique dans la base de données
        [NotNull, Unique]
         public string Name { get; set; }
 
+        [NotNull]
         public string FrontPicture { get; set; }
 
         public string BackPicture { get; set; }
@@ -53,7 +54,5 @@ namespace PokemonApplication.Models
       
         [NotNull]
         public string Genus { get; set; }
-       
-   
     }
 }

@@ -22,14 +22,20 @@
     <Compile Update="Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\Page4.xaml.cs">
-      <DependentUpon>Page4.xaml</DependentUpon>
+    <Compile Update="Views\ListOfPokemonDetailView.xaml.cs">
+      <DependentUpon>ListOfPokemonDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TeamDetailView.xaml.cs">
+      <DependentUpon>TeamDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TeamView.xaml.cs">
+      <DependentUpon>TeamView.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\ListOfPokemonView.xaml.cs">
       <DependentUpon>ListOfPokemonView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\Page3.xaml.cs">
-      <DependentUpon>Page3.xaml</DependentUpon>
+    <Compile Update="Views\AddPokemonView.xaml.cs">
+      <DependentUpon>AddPokemonView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -40,13 +46,16 @@
     <EmbeddedResource Update="Views\ListOfPokemonView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Page2Detail.xaml">
+    <EmbeddedResource Update="Views\ListOfPokemonDetailView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Page3.xaml">
+    <EmbeddedResource Update="Views\AddPokemonView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Page4.xaml">
+    <EmbeddedResource Update="Views\TeamView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TeamDetailView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

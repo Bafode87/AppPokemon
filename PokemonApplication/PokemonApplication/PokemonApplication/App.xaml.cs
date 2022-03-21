@@ -7,15 +7,17 @@ namespace PokemonApplication
 {
     public partial class App : Application
     {
-        string dbPath = Path.Combine(FileSystem.AppDataDirectory, "database.db3" );
+        // Création de la base de données
+        string dbPath = Path.Combine(FileSystem.AppDataDirectory, "database" );
         
-        public static PokemonRepository PokemonRepository { get; private set; }
+        public static Repository.Repository Repository { get; private set; }
+   
 
         public App()
         {
             InitializeComponent();
 
-            PokemonRepository = new PokemonRepository(dbPath);
+            Repository = new Repository.Repository(dbPath);
             MainPage = new MainPage();
         }
 

@@ -22,6 +22,24 @@
                         HorizontalTextAlignment="Center"
                         Text="Bienvenue dans l'univers incroyable des pokémons ! Notre application crée en mars 2022 comporte trois fonctionnalités :  " />
 
+                    <Label
+                         Padding="15"
+                        FontSize="Default"
+                        HorizontalTextAlignment="Center"
+                        Text="Vous pouvez consulter le pokedex avec les 50 premiers pokemons. Vous pouvez également rechercher et supprimer les pokemons"/>
+
+                    <Label
+                         Padding="15"
+                        FontSize="Default"
+                        HorizontalTextAlignment="Center"
+                        Text="Vous pouvez ajoutez de nouveau pokemon au pokedex."/>
+
+                    <Label
+                         Padding="15"
+                        FontSize="Default"
+                        HorizontalTextAlignment="Center"
+                        Text="Vous pouvez constituer une equipe avec les pokemons présent dans le pokedex.Vous pouvez également supprimer l'equipe et en reconstituer une nouvelle."/>
+
 
                     <Label
                         FontAttributes="Bold,Italic"
