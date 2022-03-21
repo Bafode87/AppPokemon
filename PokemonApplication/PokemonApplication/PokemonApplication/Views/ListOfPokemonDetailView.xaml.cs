@@ -65,7 +65,9 @@ namespace PokemonApplication.Views
                 
 
                 PokemonTeamModel pokemonTeam = new PokemonTeamModel();
+            if (TeamViewModel.Instance.MyList1.Count < 6)
 
+            {
                 foreach (PokemonModel poke in listOfPokemon1)
                 {
                     if (poke.Name == Name.Text)
@@ -97,9 +99,12 @@ namespace PokemonApplication.Views
 
                     }
                 }
-     
+
                 await DisplayAlert("Ajout", "Le pokemon a bien ete ajouté a l'équipe", "OK");
-            
+            }else
+            {
+                await DisplayAlert("Erreur", "L'équipe est pleine. Vous pouvez la supprimez.", "OK");
+            }
         }
     }
 }

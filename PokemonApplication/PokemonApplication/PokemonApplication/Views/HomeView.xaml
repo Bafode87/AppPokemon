@@ -38,7 +38,7 @@
                          Padding="15"
                         FontSize="Default"
                         HorizontalTextAlignment="Center"
-                        Text="Vous pouvez constituer une equipe avec les pokemons présent dans le pokedex.Vous pouvez également supprimer l'equipe et en reconstituer une nouvelle."/>
+                        Text="Vous pouvez constituer une equipe de 6 avec les pokemons présent dans le pokedex.Vous pouvez également supprimer l'equipe et en reconstituer une nouvelle."/>
 
 
                     <Label

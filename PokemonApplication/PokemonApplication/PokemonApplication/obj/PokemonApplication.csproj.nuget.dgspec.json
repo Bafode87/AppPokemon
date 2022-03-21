@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj": {}
+    "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj": {}
   },
   "projects": {
-    "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj": {
+    "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj",
+        "projectUniqueName": "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj",
         "projectName": "PokemonApplication",
-        "projectPath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj",
+        "projectPath": "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj",
         "packagesPath": "C:\\Users\\bafod\\.nuget\\packages\\",
-        "outputPath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\obj\\",
+        "outputPath": "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bafod\\AppData\\Roaming\\NuGet\\NuGet.Config"

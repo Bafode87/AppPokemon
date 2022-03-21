@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout Padding="15" BackgroundColor="LightGray">
             <Image Source="pokeAppli.png" WidthRequest="200" />
-
+            <Label HorizontalTextAlignment="Center" TextColor="Black">Constituez votre équipe ! Cliquez sur les pokemons pour voir leur détail</Label>
 
             <CollectionView
                 x:Name="MyCollectionView"
@@ -73,9 +73,9 @@
 
 
             </CollectionView>
-            <Frame>
-                <Button Text="Supression de l'equipe" Clicked="deleteTeam"/>
-            </Frame>
+         
+                <Button Text="Supression de l'equipe"  BackgroundColor="White" CornerRadius="10" Clicked="deleteTeam"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

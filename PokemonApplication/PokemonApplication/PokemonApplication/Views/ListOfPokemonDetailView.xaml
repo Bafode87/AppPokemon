@@ -244,7 +244,7 @@
                                 </StackLayout>
                             </StackLayout>
                         </Frame>
-                        <Button Clicked="AddPokemonInTeam" Text="Ajouter à l'équipe" />
+                        <Button Clicked="AddPokemonInTeam"  BackgroundColor="White" CornerRadius="10" Text="Ajouter à l'équipe" />
                         
                         <Button    
                             BackgroundColor="White"

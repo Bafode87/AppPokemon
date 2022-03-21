@@ -3950,11 +3950,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\PokemonApplication.Android.csproj",
+      "projectUniqueName": "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\PokemonApplication.Android.csproj",
       "projectName": "PokemonApplication.Android",
-      "projectPath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\PokemonApplication.Android.csproj",
+      "projectPath": "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\PokemonApplication.Android.csproj",
       "packagesPath": "C:\\Users\\bafod\\.nuget\\packages\\",
-      "outputPath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\obj\\",
+      "outputPath": "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -3969,8 +3969,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj": {
-              "projectPath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj"
+            "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj": {
+              "projectPath": "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication\\PokemonApplication.csproj"
             }
           }
         }

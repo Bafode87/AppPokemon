@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xBGY5E/ef9Lf1IylaKjVK9l0nqNWAF0RxSZkZcIn8e66A4RkfGTUcA2Veky/2Lu/LFS9r3zkkGlu3bPft6FYmw==",
+  "dgSpecHash": "DidgnS3143GOubcfMJpqNCBOgRLmIslBtQRUFBxIiLhQf+S1pOlVqS5qXOeRCejEvDPRKNr5FDBOlRPJLmoWKw==",
   "success": true,
-  "projectFilePath": "C:\\PokemonApp\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\PokemonApplication.Android.csproj",
+  "projectFilePath": "C:\\poketest\\AppPokemon\\PokemonApplication\\PokemonApplication\\PokemonApplication.Android\\PokemonApplication.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bafod\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\bafod\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.0\\microsoft.extensions.caching.abstractions.3.1.0.nupkg.sha512",
